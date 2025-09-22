@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали курса — Language Quest</title>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="brand">
+                <span class="logo">LQ</span>
+                <span class="brand-name">Language Quest</span>
+            </div>
+            <nav class="nav" id="auth-nav">
+                <a href="/">Главная</a>
+                <a href="/courses">Курсы</a>
+                <a href="/shop">Магазин</a>
+                <a href="/account">Аккаунт</a>
+                <span id="xp-indicator" class="badge">XP 0</span>
+                <span id="level-indicator" class="badge">LVL 1</span>
+                <a href="/auth" data-auth>Вход/Регистрация</a>
+                <a href="/logout" data-logout style="display:none">Выйти</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="card">
+            <h2 id="course-header">Курс: {{ language or 'Английский язык' }}</h2>
+            <div class="course-sections">
+                <div class="course-block">
+                    <h3>Материалы</h3>
+                    <ul>
+                        <li>Лекции: Введение, Времена, Словообразование</li>
+                        <li>Видео: Произношение, Разговорные фразы</li>
+                        <li>Статьи: Советы по запоминанию слов</li>
+                    </ul>
+                </div>
+                <div class="course-block">
+                    <h3>Мини‑игры / Тесты</h3>
+                    <ul>
+                        <li>Word Match — закрепление слов</li>
+                        <li>Listening Quest — аудирование</li>
+                        <li>Grammar Sprint — грамматические задания</li>
+                    </ul>
+                </div>
+                <div class="course-block">
+                    <h3>Прогресс</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: {{ progress or '40%' }};"></div>
+                    </div>
+                    <p id="progress-label">Завершено: {{ progress or '40%' }}</p>
+                </div>
+            </div>
+            <div class="actions">
+                <a class="button primary" href="/courses">Продолжить обучение</a>
+            </div>
+        </section>
+
+        <section class="card testimonial">
+            <h3>Отзыв студента</h3>
+            <blockquote>
+                «Я прошёл 40% курса за месяц. Мини‑игры удерживают внимание,
+                а чат‑бот мгновенно объясняет ошибки. Это лучший формат для меня!»
+            </blockquote>
+            <p class="muted">— Алексей, 32 года</p>
+        </section>
+    </main>
+        <section class="card">
+            <h3>Учебный план</h3>
+            <div id="curriculum"></div>
+        </section>
+
+    <footer class="site-footer"><div class="container"><p>© 2025 Language Quest</p></div></footer>
+    <script src="/assets/scripts/main.js"></script>
+</body>
+</html>
+

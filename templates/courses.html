@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы — Language Quest</title>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="brand">
+                <span class="logo">LQ</span>
+                <span class="brand-name">Language Quest</span>
+            </div>
+            <nav class="nav" id="auth-nav">
+                <a href="/">Главная</a>
+                <a href="/courses">Курсы</a>
+                <a href="/shop">Магазин</a>
+                <a href="/account">Аккаунт</a>
+                <span id="xp-indicator" class="badge">XP 0</span>
+                <span id="level-indicator" class="badge">LVL 1</span>
+                <a href="/auth" data-auth>Вход/Регистрация</a>
+                <a href="/logout" data-logout style="display:none">Выйти</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="gradient-bg">
+            <div class="container" style="padding:28px 0 18px">
+                <h1 style="margin:0 0 6px">Курсы языков</h1>
+                <p class="muted lead">Выберите язык и начните с тем, которые вам интересны. Прогресс и streak сохраняются.</p>
+            </div>
+        </section>
+
+        <section class="container section-showcase section-spacious">
+            <div class="decor decor-1"></div>
+            <div class="decor decor-2"></div>
+            <h2 class="section-title">Выберите язык</h2>
+            <div class="card-grid jumbo course-grid">
+                <a class="card course-card" href="/course/english">
+                    <h3>English</h3>
+                    <p class="muted">Английский язык • A1–B2</p>
+                </a>
+                <a class="card course-card" href="/course/spanish">
+                    <h3>Spanish</h3>
+                    <p class="muted">Испанский язык • A1–B1</p>
+                </a>
+                <a class="card course-card" href="/course/german">
+                    <h3>German</h3>
+                    <p class="muted">Немецкий язык • A1–B1</p>
+                </a>
+                <a class="card course-card" href="/course/french">
+                    <h3>French</h3>
+                    <p class="muted">Французский язык • A1–B1</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="cta-band">
+            <div class="container cta-inner">
+                <div>
+                    <h2>Не знаете, с чего начать?</h2>
+                    <p class="muted">Попробуйте «Выживание: приветствия, покупки, кафе» — быстрый вход в разговорную практику.</p>
+                </div>
+                <div class="hero-ctas">
+                    <a class="button primary" href="/course/english">Начать с English</a>
+                    <a class="button ghost" href="/courses">Все языки</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer"><div class="container"><p>© 2025 Language Quest</p></div></footer>
+    <script src="/assets/scripts/main.js"></script>
+</body>
+</html>
+

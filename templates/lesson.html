@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок — Language Quest</title>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+</head>
+<body data-course-id="{{ course_id }}" data-lesson-id="{{ lesson_id }}">
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="brand">
+                <span class="logo">LQ</span>
+                <span class="brand-name">Language Quest</span>
+            </div>
+            <nav class="nav" id="auth-nav">
+                <a href="/">Главная</a>
+                <a href="/courses">Курсы</a>
+                <a href="/shop">Магазин</a>
+                <a href="/account">Аккаунт</a>
+                <span id="xp-indicator" class="badge">XP 0</span>
+                <span id="level-indicator" class="badge">LVL 1</span>
+                <a href="/auth" data-auth>Вход/Регистрация</a>
+                <a href="/logout" data-logout style="display:none">Выйти</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="card">
+            <h2 id="lesson-title">Урок</h2>
+            <div class="card-grid vertical">
+                <div class="card">
+                    <h3>Мини‑игра: Word Match</h3>
+                    <p class="muted">Соотнесите слова и переводы</p>
+                    <div id="word-match"></div>
+                </div>
+                <div class="card">
+                    <h3>Мини‑игра: Listening Quest</h3>
+                    <p class="muted">Прослушайте и выберите правильную фразу</p>
+                    <div id="listening-quest"></div>
+                </div>
+                <div class="card">
+                    <h3>Мини‑игра: Grammar Sprint</h3>
+                    <p class="muted">Выберите правильную форму</p>
+                    <div id="grammar-sprint"></div>
+                </div>
+            </div>
+            <div class="actions">
+                <span id="lesson-score" class="muted">Соберите 80% баллов, чтобы завершить урок</span>
+                <button id="finish-lesson" class="button primary" disabled>Завершить урок</button>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer"><div class="container"><p>© 2025 Language Quest</p></div></footer>
+    <script src="/assets/scripts/main.js"></script>
+</body>
+</html>
+
