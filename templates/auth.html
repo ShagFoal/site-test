@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход и регистрация — Language Quest</title>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="brand">
+                <span class="logo">LQ</span>
+                <span class="brand-name">Language Quest</span>
+            </div>
+            <nav class="nav" id="auth-nav">
+                <a href="/">Главная</a>
+                <a href="/courses">Курсы</a>
+                <a href="/shop">Магазин</a>
+                <a href="/account">Аккаунт</a>
+                <span id="xp-indicator" class="badge">XP 0</span>
+                <span id="level-indicator" class="badge">LVL 1</span>
+                <a href="/auth" data-auth>Вход/Регистрация</a>
+                <a href="/logout" data-logout style="display:none">Выйти</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container auth">
+        <section class="card">
+            <h2>Добро пожаловать</h2>
+            <p class="muted">Введите Email и пароль, чтобы продолжить</p>
+            <form id="auth-form" class="form">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" required placeholder="Введите пароль">
+
+                <div class="actions">
+                    <button type="submit" class="button primary">Войти</button>
+                    <button type="button" id="signup-btn" class="button ghost">Зарегистрироваться</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer"><div class="container"><p>© 2025 Language Quest</p></div></footer>
+    <script src="/assets/scripts/main.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var form = document.getElementById('auth-form');
+      var signup = document.getElementById('signup-btn');
+      function doLogin(){
+        try {
+          var email = (document.getElementById('email').value || 'local-user').trim().toLowerCase();
+          localStorage.setItem('lq_user_id', email);
+          localStorage.setItem('lq_authed', '1');
+          if (!localStorage.getItem('lq_banner_selected')) localStorage.setItem('lq_banner_selected', 'default-white');
+        } catch(e){}
+        window.location.href = '/account';
+      }
+      if (form) form.addEventListener('submit', function(e){ e.preventDefault(); doLogin(); });
+      if (signup) signup.addEventListener('click', function(e){ e.preventDefault(); doLogin(); });
+    });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аккаунт — Language Quest</title>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="brand">
+                <span class="logo">LQ</span>
+                <span class="brand-name">Language Quest</span>
+            </div>
+            <nav class="nav" id="auth-nav">
+                <a href="/">Главная</a>
+                <a href="/courses">Курсы</a>
+                <a href="/shop">Магазин</a>
+                <a href="/account">Аккаунт</a>
+                <span id="xp-indicator" class="badge">XP 0</span>
+                <span id="level-indicator" class="badge">LVL 1</span>
+                <a href="/auth" data-auth>Вход/Регистрация</a>
+                <a href="/logout" data-logout style="display:none">Выйти</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="gradient-bg">
+            <div class="container" style="padding:28px 0 18px">
+                <h1 style="margin:0 0 6px">Мой профиль</h1>
+                <p class="muted lead">Ваш прогресс, достижения и баннеры.</p>
+            </div>
+        </section>
+        <section class="container account-grid section-spacious">
+            <div class="card profile" id="profile-card">
+                <div class="avatar">👤</div>
+                <div>
+                    <h2>Ваш профиль</h2>
+                    <p>Уровень аккаунта: <strong id="account-level">LVL 1</strong></p>
+                    <p>XP: <strong id="account-xp">0</strong></p>
+                    <p>Достижения: <span class="badge">Streak 12🔥</span> <span class="badge">Grammar Pro</span></p>
+                    <a class="button ghost" href="/settings">Настройки профиля</a>
+                </div>
+            </div>
+
+            <div class="card stats">
+                <h3>Метрики обучения</h3>
+                <div class="metrics">
+                    <div class="metric-card">
+                        <div class="metric-value">+70%</div>
+                        <div class="metric-label">вовлечённости</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">12</div>
+                        <div class="metric-label">дней серии</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">40%</div>
+                        <div class="metric-label">прогресса курса</div>
+                    </div>
+                </div>
+                <h3>Мои курсы</h3>
+                <div id="account-courses" class="card-grid jumbo"></div>
+                <button id="show-all-courses" class="button ghost" style="margin-top: 12px; display: none;">Показать все курсы</button>
+                
+                <h3>Достижения</h3>
+                <div id="achievements-list" class="card-grid"></div>
+                <button id="show-all-achievements" class="button ghost" style="margin-top: 12px; display: none;">Показать все достижения</button>
+                <h3>Мои баннеры</h3>
+                <div id="owned-banners" class="card-grid jumbo"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer"><div class="container"><p>© 2025 Language Quest</p></div></footer>
+    <script src="/assets/scripts/main.js"></script>
+</body>
+</html>
+

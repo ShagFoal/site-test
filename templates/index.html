@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Quest — учись играя</title>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script defer src="/assets/scripts/main.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="brand">
+                <span class="logo">LQ</span>
+                <span class="brand-name">Language Quest</span>
+            </div>
+            <nav class="nav" id="auth-nav">
+                <a href="/">Главная</a>
+                <a href="/courses">Курсы</a>
+                <a href="/shop">Магазин</a>
+                <a href="/account">Аккаунт</a>
+                <span id="xp-indicator" class="badge">XP 0</span>
+                <span id="level-indicator" class="badge">LVL 1</span>
+                <a href="/auth" data-auth>Вход/Регистрация</a>
+                <a href="/logout" data-logout style="display:none">Выйти</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero gradient-bg">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1>Language Quest — учись играя</h1>
+                    <p>Игра для изучения языков с геймификацией, мотивацией и умным чат-ботом наставником.</p>
+                    <div class="hero-ctas">
+                        <a class="button primary" href="/courses">Начать обучение</a>
+                        <a class="button ghost" href="/auth">Войти</a>
+                    </div>
+                    <div class="metrics">
+                        <div class="metric-card">
+                            <div class="metric-value">+70%</div>
+                            <div class="metric-label">вовлечённости</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">92%</div>
+                            <div class="metric-label">довольных студентов</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">3x</div>
+                            <div class="metric-label">быстрее прогресс</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="phone-mockup">
+                        <div class="screen">
+                            <div class="badge" id="mock-xp">XP 0</div>
+                            <div class="level" id="mock-level">LVL 1</div>
+                            <div class="streak" id="mock-streak">🔥 0-day streak</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features container section-showcase">
+            <div class="decor decor-1"></div>
+            <div class="decor decor-2"></div>
+            <h2>Почему Language Quest?</h2>
+            <p class="muted lead">Комфортное обучение с удовольствием: визуал, геймификация, персонализация.</p>
+            <div class="card-grid jumbo">
+                <article class="card feature">
+                    <h3>Геймификация</h3>
+                    <p>Достигайте целей, получайте XP и бейджи. Учёба как игра.</p>
+                </article>
+                <article class="card feature">
+                    <h3>Чат-бот наставник</h3>
+                    <p>Индивидуальные подсказки и объяснения прямо в заданиях.</p>
+                </article>
+                <article class="card feature">
+                    <h3>Гибкие форматы</h3>
+                    <p>Лекции, видео, мини-игры и тесты под ваш темп.</p>
+                </article>
+                <article class="card feature">
+                    <h3>Прогресс и сериия</h3>
+                    <p>Мотивация через streak, уровни и наглядные метрики вовлечённости.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="card-grid">
+                <article class="card">
+                    <h3>О программах обучения</h3>
+                    <p>Курсы построены на реальных сценариях общения: путешествия, работа, ежедневные задачи. Каждая тема содержит 20 уроков с мини‑играми и практикой.</p>
+                </article>
+                <article class="card">
+                    <h3>Авторы курсов</h3>
+                    <p>Материалы подготовлены преподавателями и носителями языка. Мы обновляем контент, основываясь на обратной связи студентов.</p>
+                </article>
+                <article class="card">
+                    <h3>Новости платформы</h3>
+                    <ul>
+                        <li>Новые баннеры за уровни</li>
+                        <li>Геймифицированные задания «Порядок слов»</li>
+                        <li>Обновлённый дизайн и прогресс‑бар</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section-spacious section-showcase">
+            <div class="decor decor-3"></div>
+            <div class="decor decor-4"></div>
+            <h2 class="section-title">Что внутри курса</h2>
+            <p class="muted lead">Каждый курс — это 5 тематических блоков и 100 мини‑уроков с практикой.</p>
+            <div class="card-grid three jumbo">
+                <article class="card">
+                    <h3>Быстрые уроки</h3>
+                    <p>20 уроков в каждой теме: от слов и фраз до свободного общения.</p>
+                </article>
+                <article class="card">
+                    <h3>Практика каждый день</h3>
+                    <p>Мини‑игры на аудирование, грамматику и словарь. Отслеживание серии дней.</p>
+                </article>
+                <article class="card">
+                    <h3>Персональная траектория</h3>
+                    <p>Сложность адаптируется под ваш результат и вовлечённость.</p>
+                </article>
+                <article class="card">
+                    <h3>Материалы</h3>
+                    <p>Лекции, видео, словари, тренажёры и итоговые тесты для закрепления.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container section-spacious">
+            <h2 class="section-title">Отзывы студентов</h2>
+            <div class="card-grid testimonials">
+                <article class="card testimonial">
+                    <p>«За месяц прошёл 40% курса — мини‑игры держат внимание, а бот объясняет ошибки». </p>
+                    <span class="muted">Алексей, 32</span>
+                </article>
+                <article class="card testimonial">
+                    <p>«Подготовилась к собеседованию на английском. Нравится понятная структура тем».</p>
+                    <span class="muted">Мария, 27</span>
+                </article>
+                <article class="card testimonial">
+                    <p>«Учусь по дороге на работу: короткие задания и прогресс‑бар мотивируют».</p>
+                    <span class="muted">Игорь, 24</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="cta-band">
+            <div class="container cta-inner">
+                <div>
+                    <h2>Готовы начать?</h2>
+                    <p class="muted">Выберите язык и получите первые 250 XP за стартовый урок.</p>
+                </div>
+                <div class="hero-ctas">
+                    <a class="button primary" href="/courses">Перейти к курсам</a>
+                    <a class="button ghost" href="/auth">Войти</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 Language Quest</p>
+        </div>
+    </footer>
+</body>
+</html>
